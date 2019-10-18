@@ -5,8 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DevelopmentNoteBuilder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="1350" Width="800">
+    <Grid Margin="0,0,-215,-652" >
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="88,6,0,0" VerticalAlignment="Top" Width="262" Height="25">
+            <ComboBoxItem Content="Development" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="After Failed Cross Checking" HorizontalAlignment="Left" />
+            <ComboBoxItem Content="After Failed Testing" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="After PO Rejected" HorizontalAlignment="Left" />
+        </ComboBox>
+        <Label x:Name="label" Content="Type" HorizontalAlignment="Left" Margin="40,6,0,0" VerticalAlignment="Top" Width="112"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="256" Margin="417,36,0,0" VerticalAlignment="Top" Width="379">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="label1" Content="Development Note" HorizontalAlignment="Left" Margin="417,6,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label x:Name="label2" Content="Change Log" HorizontalAlignment="Left" Margin="417,309,0,0" VerticalAlignment="Top" Width="121"/>
+        <RichTextBox x:Name="richTextBox_Copy" HorizontalAlignment="Left" Height="256" Margin="417,36,0,0" VerticalAlignment="Top" Width="379">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox x:Name="richTextBox1" HorizontalAlignment="Left" Height="297" Margin="417,348,0,0" VerticalAlignment="Top" Width="379">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="label3" Content="Deployment  Note" HorizontalAlignment="Left" Margin="417,667,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.469,-0.393"/>
+        <RichTextBox x:Name="richTextBox2" HorizontalAlignment="Left" Height="318" Margin="417,697,0,0" VerticalAlignment="Top" Width="379">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="22,66,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Contact" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
     </Grid>
 </Window>
